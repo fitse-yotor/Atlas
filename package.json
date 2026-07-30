@@ -9,10 +9,10 @@
     "workers/*"
   ],
   "scripts": {
-    "dev": "npm run dev -w geolibre-desktop",
-    "build": "npm run build -w geolibre-desktop",
-    "build:jupyterlite": "node scripts/build-jupyterlite.mjs",
-    "build:embed": "node scripts/build-embed.mjs",
+    "dev": "node init && npm run dev -w geolibre-desktop",
+    "build": "node init && npm run build -w geolibre-desktop",
+    "build:jupyterlite": "node init && node scripts/build-jupyterlite.mjs",
+    "build:embed": "node init && node scripts/build-embed.mjs",
     "typecheck": "npm run build",
     "lint": "eslint apps packages workers tests",
     "test": "npm run test:frontend",

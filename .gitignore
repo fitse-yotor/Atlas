@@ -14,8 +14,6 @@ target/
 .tauri/
 *.log
 .DS_Store
-.env
-.env.local
 __pycache__/
 *.pyc
 .ruff_cache/
@@ -39,7 +37,6 @@ coverage/
 htmlcov/
 coverage.xml
 .idea/
-.vscode/
 *.tsbuildinfo
 **/src-tauri/gen/
 .playwright-cli/
@@ -74,3 +71,7 @@ python/examples/my-map.geolibre.json
 # Rendered Homebrew cask, emitted to the working dir by scripts/render-*-cask.sh
 # for submission to a tap / homebrew-cask; not committed to this repo.
 /geolibre.rb
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
